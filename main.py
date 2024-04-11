@@ -6,7 +6,7 @@ from selenium.webdriver.edge.options import Options
 import time
 
 
-user = "test12"
+user = "test15"
 email = "test12@gmail.com"
 passwd = "test12test12"
 
@@ -143,16 +143,3 @@ def logout():
     body.screenshot('screenshots/logout/4. loguot_completo.png')
     time.sleep(10)
     driver.close()
-
-def realizar_pruebas():
-    sign_up()
-    time.sleep(2)
-    login()
-    time.sleep(2)
-    create_room()
-    time.sleep(2)
-    delete_room()
-    time.sleep(2)
-    logout()
-
-realizar_pruebas()
